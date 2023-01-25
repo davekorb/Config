@@ -1,7 +1,7 @@
-#spring:
-#  cloud:
-#    gateway:
-#      routes:
+spring:
+  cloud:
+    gateway:
+      routes:
 #        - id: OwnshipService
 #          uri: lb://OwnshipService
 #          predicates:
