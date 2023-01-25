@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: OwnshipService
+          uri: lb://OwnshipService
+          predicates:
+            - Path=/**
