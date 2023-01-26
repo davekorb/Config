@@ -10,9 +10,8 @@ spring:
          uri: lb://OwnshipReaderService
          predicates:
            - Method=GET
-         filters:
-           - name: CircuitBreaker
-             args:
-               name: fail
-               fallbackUri: lb://OwnshipService
-        
+#        filters:
+#          - name: CircuitBreaker
+#            args:
+#              name: fail
+#              fallbackUri: lb://OwnshipService
