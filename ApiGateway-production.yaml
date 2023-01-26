@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+       - id: OwnshipWriteRoute
+         uri: lb://OwnshipService
+         predicates:
+           - Method=POST
+       - id: OwnshipReadRoute
+         uri: lb://OwnshipReaderService
+         predicates:
+           - Method=GET

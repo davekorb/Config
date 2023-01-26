@@ -2,7 +2,7 @@ spring:
   cloud:
     gateway:
       routes:
-       - id: OwnshipServiceRoute
+       - id: OwnshipRoute
          uri: lb://OwnshipService
          predicates:
            - Path=/**
